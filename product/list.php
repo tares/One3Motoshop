@@ -90,7 +90,7 @@ $pages = ceil($count/$per_page)
             </div>
         </div>
         <div id="productSection">
-        	<div id="listHeader" class="dropShadow">
+        	<div id="productHeader" class="dropShadow">
                     <div id="leftSub">
                         <div id="topleftSub" class="three-edge-shadow">
                             <div id="headerSub" class="dropShadow_lighter">

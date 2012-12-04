@@ -1,3 +1,13 @@
+<?php
+include('config.php');
+$sql = "select * from data_product_info where ID_productInfo ='0001'";
+$result = @mysql_query($sql);
+$count = @mysql_num_rows($result);
+$row = @mysql_fetch_array($result);
+$name=$row['name_product'];
+$desc=$row['desc_product'];
+$price=$row['price_product'];
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -114,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="rightSub" class="one-edge-shadow">
+                    <div id="rightSubBrand" class="one-edge-shadow">
                         <div id="headerSub" class="dropShadow_lighter">
                             <div id="font-headserSub">
                                 Brand > Honda > FIREBLADE(CBR 1000RR) 
@@ -169,28 +179,18 @@
                             </div>
                         </div>
                         <!----------END SLIDE------------->
-                        <div id="productInfo">
-                            <div id="productPrice">
-                                <a>Rp 50.000.000,00</a>
-                            </div>
-                            <hr class='dotted' />
-                            <div id="productDesc">
-                                <a> <b>Mesin : </b>
-                                    Tipe mesin 	4 Langkah SOHC
-                                    Sistem pendinginan 	Pendingin udara
-                                    Diameter x langkah 	63.5 x 62.2 mm
-                                    Volume langkah 	196.9 cc
-                                    Perbandingan kompresi 	9,0 : 1
-                                    Daya maksimum 	16.7 PS / 8.500 rpm
-                                    Torsi maksimum 	1.60 kgf.m / 7.000 rpm
-                                    Kopling 	Manual, multi plate wet clutch
-                                    Starter 	Elektrik & kick starter
-                                    Busi 	ND X 24 EP – U9/NGK DP8 EA-9
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                        
+                    <div id="descHeader">
+                        <a>Price - </a><a style="color: #ffd700">Rp. <?php echo $price ?>,00</a>
+                        <hr class="blackLine" />
+                        <a>Description</a>
+                    </div>
+                    <div id="productInfo" class="glass">
+                        <div id="descText">
+                            <a><?php echo $desc;?>
+                            </a>
+                        </div>
+                    </div>    
             </div>
         </div>
         
