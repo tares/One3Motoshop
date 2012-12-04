@@ -346,6 +346,12 @@
 		height:32px;
 	}
 	
+	#searchBOX{
+		background-color:#222;
+		height:28px;
+		padding:2px 10px;
+	}
+	
 	#topSearchBar{
 		width:100%;
 		margin:10px 0px;
@@ -355,18 +361,21 @@
 	
 	#section-left{
 		position:absolute;
-		background-color:#222;
+		background-color:#333;
 		width:240px;
 		min-height:600px;
 	}
 	
 	#section-right{
-		padding:50px 40px;
 		float:right;
 		background-color:#222;
-		width:590px;
-		min-height:500px;
+		width:680px;
+		min-height:600px;
 		margin-bottom:20px;
+	}
+	
+	#paddingWrapper{
+		padding: 60px 40px;
 	}
 	
 	#product-box-row{
