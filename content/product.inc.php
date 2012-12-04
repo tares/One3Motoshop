@@ -1,4 +1,34 @@
-        <div id="mainSection">
-        	
-        
+		<div id="mainSection">
+        	<div id="sectionTOP" class="dropShadow_lighter">
+                <div id="font-headserSub">
+                    Product Catalogue
+                </div>
+                <!--------SEARCH------>
+                <div id="tools-search">
+                    <form action="#" method="post" class="form-wrapper cf">
+                        <div>
+                              <input name="search" type="text"/>
+                              <button type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                 <!-------------------->
+			</div>
+        	<div id="productWrapper">
+            	<div id="section-left" class="dropShadow_lighter"></div>
+                <div id="section-right" class="dropShadow_lighter">
+                	<div id="product-box-row">
+                    	<div id="eventWrapper">
+                            <center>
+                            <img id="brand_picThumb" src="source/images/product/brand/ducati120x120.png" width="120" height="120" alt="Brand Logo" />
+                            <img id="brand_picThumb" src="source/images/product/brand/honda120x120.png" width="120" height="120" alt="Brand Logo" />
+                            <img id="brand_picThumb" src="source/images/product/brand/kawasaki120x120.png" width="120" height="120" alt="Brand Logo" />
+                            <img id="brand_picThumb" src="source/images/product/brand/ktm120x120.png" width="120" height="120" alt="Brand Logo" />
+                            <img id="brand_picThumb" src="source/images/product/brand/suzuki120x120.png" width="120" height="120" alt="Brand Logo" />
+                            <img id="brand_picThumb" src="source/images/product/brand/yamaha120x120.png" width="120" height="120" alt="Brand Logo" />
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>

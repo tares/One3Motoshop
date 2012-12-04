@@ -5,6 +5,7 @@
         <title>Home | ONE THREE Motoshop</title>
         <link rel="stylesheet" type="text/css" href="source/style/css/style.css" media="screen" title="style (screen)" />
         <link rel="stylesheet" type="text/css" href="source/style/css/menu.css" media="screen" title="style (screen)" />
+        <link rel="stylesheet" type="text/css" href="source/style/css/product.css" media="screen" title="style (screen)" />
         
         <?php include("include/loader/jquery.inc.php"); ?>
         

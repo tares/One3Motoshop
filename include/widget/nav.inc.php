@@ -3,8 +3,8 @@
                 ONE THREE Motoshop
             </div>
             <ul id="toolbar-menu">
-                <li><a href="#mainHeader">Home</a></li>
-                <li><a href="#product">Product</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="index.php?location=product">Product</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="javascript:void(0)" class="show_hide">About Us</a></li>

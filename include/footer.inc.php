@@ -53,7 +53,7 @@
             	</div>
             </div>
         </div>
-		<div align="center">
+		<div id="footer" align="center">
 			<span class="credit">
             	<p>Terms of Use | Privacy Policy</p>
                 <p>Copyright &copy; 2012 Flapjaxx Inc. All rights reserved</p>

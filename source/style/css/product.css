@@ -79,8 +79,8 @@
 /* Form Search */
 .form-wrapper {
     float: right;
-    margin: 4px 5px;
-    width: 140px;
+    margin: 5px 5px;
+    width: 200px;
     background: #444;
     background: rgba(0,0,0,.2);
     border-radius: 10px;
@@ -88,8 +88,8 @@
 }
 /* Form text input */
 .form-wrapper input {
-    width: 96px;
-    height: 16px;
+    width: 156px;
+    height: 18px;
     float: left;   
     font: 12px  'lucida sans', 'trebuchet MS', 'Tahoma';
     padding:2px;
