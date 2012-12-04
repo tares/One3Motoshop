@@ -379,6 +379,7 @@
 		width:130px;
 		height:130px;
 		background-color:#333;
+		cursor:pointer;
 		
 		/*Drop shadow*/
 		-moz-box-shadow: 0px 0px 10px #000;
@@ -387,6 +388,12 @@
 		/*End drop shadow*/
 	}
 	
+	#brand_picThumb:hover{
+		opacity:1.0;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+		-moz-opacity:1.0;
+		-khtml-opacity:1; 
+	}
 	
 
 /* END Product Style */

@@ -20,12 +20,12 @@
                 	<div id="product-box-row">
                     	<div id="eventWrapper">
                             <center>
-                            <img id="brand_picThumb" src="source/images/product/brand/ducati120x120.png" width="120" height="120" alt="Brand Logo" />
-                            <img id="brand_picThumb" src="source/images/product/brand/honda120x120.png" width="120" height="120" alt="Brand Logo" />
-                            <img id="brand_picThumb" src="source/images/product/brand/kawasaki120x120.png" width="120" height="120" alt="Brand Logo" />
-                            <img id="brand_picThumb" src="source/images/product/brand/ktm120x120.png" width="120" height="120" alt="Brand Logo" />
-                            <img id="brand_picThumb" src="source/images/product/brand/suzuki120x120.png" width="120" height="120" alt="Brand Logo" />
-                            <img id="brand_picThumb" src="source/images/product/brand/yamaha120x120.png" width="120" height="120" alt="Brand Logo" />
+                                <a href="#Ducati"><img id="brand_picThumb" class="blur" src="source/images/product/brand/ducati120x120.png" width="120" height="120" alt="Brand Logo" /></a>
+                                <a href="#Honda"><img id="brand_picThumb" class="blur" src="source/images/product/brand/honda120x120.png" width="120" height="120" alt="Brand Logo" /></a>
+                                <a href="#Kawasaki"><img id="brand_picThumb" class="blur" src="source/images/product/brand/kawasaki120x120.png" width="120" height="120" alt="Brand Logo" /></a>
+                                <a href="#KTM"><img id="brand_picThumb" class="blur" src="source/images/product/brand/ktm120x120.png" width="120" height="120" alt="Brand Logo" /></a>
+                                <a href="#Suzuki"><img id="brand_picThumb" class="blur" src="source/images/product/brand/suzuki120x120.png" width="120" height="120" alt="Brand Logo" /></a>
+                                <a href="#Yamaha"><img id="brand_picThumb" class="blur" src="source/images/product/brand/yamaha120x120.png" width="120" height="120" alt="Brand Logo" /></a>       
                             </center>
                         </div>
                     </div>
