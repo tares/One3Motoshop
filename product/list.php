@@ -1,10 +1,13 @@
 <?php
 include('config.php');
-$per_page = 4; 
-$sql = "select * from data_product_info";
-$result = mysql_query($sql);
-$count = mysql_num_rows($result);
-$pages = ceil($count/$per_page)
+if (isset($_GET['brand'])) {
+    $brand = $_GET['brand'];
+    $per_page = 4; 
+    $sql = "select * from data_product_info,data_product_brand where status='active'";
+    $result = @mysql_query($sql);
+    $count = @mysql_num_rows($result);
+    $pages = ceil($count/$per_page);
+}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -35,11 +38,12 @@ $pages = ceil($count/$per_page)
                                 function Hide_Load(){
                                 $("#loading").fadeOut('slow');
                                 };
-                                $("#content").load("page.php?page=1", Hide_Load());
+                                var brands = "suzuki";
+                                $("#content").load("page.php?page=1&brand="+brands, Hide_Load());
                                 $("#pageSub li").click(function(){
                                         Display_Load();
                                         var pageNum = this.id;
-                                        $("#content").load("page.php?page=" + pageNum, Hide_Load());
+                                        $("#content").load("page.php?page=" + pageNum , Hide_Load());
                                         $("#content").lo
                                         $('html, body').animate({ scrollTop: 0 }, 'slow');
                                 });

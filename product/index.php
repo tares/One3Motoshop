@@ -94,7 +94,8 @@
                         </div>
                         <div id="mainSub" class="brand1">
                             <div id="brandPict" class="blur">
-                                <a href="list.php"><img src="../source/images/product/brand/suzuki120x120.png"</a>
+                                <a href="list.php?brand=suzuki">
+                                <img src="../source/images/product/brand/suzuki120x120.png"</a>
                             </div>
                         </div>
                          <div id="mainSub" class="brand2">

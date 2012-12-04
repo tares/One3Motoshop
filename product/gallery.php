@@ -93,9 +93,10 @@
                              <!-------------------->
                              <div id="pickupBrand" class="blur"> 
                                  <div id="imgBrand" class="img1">
+                                     <img src="../source/images/product/brand/Suzuki_GSX-R_1000.png"/>
                                  </div>
                                  <div id="logo" class="logo1">
-                                     <img src="../source/images/product/brand/suzuki120x120.png" width="120px" height="120px"/> 
+                                     <img src="../source/images/product/brand/suzuki-none.png" width="120px" height="120px"/> 
                                  </div>
                              </div>
                              <div id="pickupBrand" class="blur">

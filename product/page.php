@@ -7,15 +7,16 @@ $per_page = 4;
 if($_GET)
 {
 $page=$_GET['page'];
+$brand=$_GET['brand'];
 }
 
 //get table contents
 $start = ($page-1)*$per_page;
-$sql = "select * from data_product_info order by ID_productInfo limit $start,$per_page";
-$result = mysql_query($sql);
+$sql = "select * from data_product_info di,data_product_brand db where db.name_productBrand='".$brand."' AND di.ID_productBrand=db.ID_productBrand  order by ID_productInfo limit $start,$per_page";
+$result = @mysql_query($sql);
 ?>
 <?php
-while($row = mysql_fetch_array($result))
+while($row = @mysql_fetch_array($result))
 {
         $name=$row['name_product'];
         $desc=$row['desc_product'];
