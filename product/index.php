@@ -100,27 +100,27 @@
                         </div>
                          <div id="mainSub" class="brand2">
                              <div id="brandPict" class="blur">
-                                 <a href="honda.php"><img src="../source/images/product/brand/honda120x120.png"</a>
+                                 <a href="list.php?brand=honda"><img src="../source/images/product/brand/honda120x120.png"</a>
                              </div>
                         </div>
                         <div id="mainSub" class="brand3">
                             <div id="brandPict" class="blur">
-                                <a href="#"><img src="../source/images/product/brand/yamaha120x120.png"</a>
+                                <a href="list.php?brand=yamaha"><img src="../source/images/product/brand/yamaha120x120.png"</a>
                             </div>
                         </div>
                         <div id="mainSub2" class="brand4">
                             <div id="brandPict" class="blur">
-                                <a href="#"><img src="../source/images/product/brand/kawasaki120x120.png"</a>
+                                <a href="list.php?brand=kawasaki"><img src="../source/images/product/brand/kawasaki120x120.png"</a>
                             </div>
                         </div>
                         <div id="mainSub2" class="brand5">
                             <div id="brandPict" class="blur">
-                                <a href="#"><img src="../source/images/product/brand/ducati120x120.png"</a>
+                                <a href="list.php?brand=ducati"><img src="../source/images/product/brand/ducati120x120.png"</a>
                             </div>
                         </div>
                         <div id="mainSub2" class="brand6">
                             <div id="brandPict" class="blur">
-                                <a href="#"><img src="../source/images/product/brand/ktm120x120.png"</a>
+                                <a href="list.php?brand=ktm"><img src="../source/images/product/brand/ktm120x120.png"</a>
                             </div>
                         </div>
                     </div>

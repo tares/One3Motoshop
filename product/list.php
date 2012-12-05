@@ -1,13 +1,30 @@
 <?php
 include('config.php');
+
+$per_page = 4; 
+
 if (isset($_GET['brand'])) {
     $brand = $_GET['brand'];
-    $per_page = 4; 
-    $sql = "select * from data_product_info,data_product_brand where status='active'";
+    $sql = "select * from data_product_info di,data_product_brand db where db.name_productBrand='".$brand."' AND di.ID_productBrand=db.ID_productBrand";
+    $result = mysql_query($sql);
+    $count = mysql_num_rows($result);
+    
+    if($count==0){
+    $sql="select * from data_product_info";
+    $result = @mysql_query($sql); 
+    $count = mysql_num_rows($result);
+    }
+}
+
+if(isset($_POST['search'])){
+    $search = $_POST['search'];
+    $sql = "select dpi.name_product from data_product_info dpi,data_product_brand dpb WHERE dpb.name_productBrand LIKE '".$search."%' AND dpb.ID_productBrand = dpi.ID_productBrand ";
     $result = @mysql_query($sql);
     $count = @mysql_num_rows($result);
-    $pages = ceil($count/$per_page);
 }
+
+$pages = ceil($count/$per_page);
+mysql_close();
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -38,12 +55,12 @@ if (isset($_GET['brand'])) {
                                 function Hide_Load(){
                                 $("#loading").fadeOut('slow');
                                 };
-                                var brands = "suzuki";
+                                var brands = "<?php Print($brand); ?>";
                                 $("#content").load("page.php?page=1&brand="+brands, Hide_Load());
                                 $("#pageSub li").click(function(){
                                         Display_Load();
                                         var pageNum = this.id;
-                                        $("#content").load("page.php?page=" + pageNum , Hide_Load());
+                                        $("#content").load("page.php?page=" + pageNum+"&brand="+brands, Hide_Load());
                                         $("#content").lo
                                         $('html, body').animate({ scrollTop: 0 }, 'slow');
                                 });
@@ -111,13 +128,13 @@ if (isset($_GET['brand'])) {
                     <div id="rightSubList" class="one-edge-shadow">
                         <div id="headerSub" class="dropShadow">
                             <div id="font-headserSub">
-                                Brand > Suzuki
+                                <a href="../product/">Brand</a> <a><?php echo "> ".$brand?></a>
                             </div>
                             <!--------SEARCH------>
                             <div id="tools-search">
-                                <form action="#" method="post" class="form-wrapper cf">
+                                <form action="list.php?search" method="post" class="form-wrapper cf">
                                     <div>
-                                          <input name="search" type="text"/>
+                                          <input name="search" type="text" class="searchbox"/>
                                           <button type="submit">Search</button>
                                     </div>
                                 </form>
@@ -126,10 +143,10 @@ if (isset($_GET['brand'])) {
                         </div>
                         <div id="loading"></div>
                         <div id="itemSub">
-                            <hr class='line' />
                             <!---- SHOW ITEM  -->
                             <div id="content" ></div>
-                            <!------------------> 	
+                            <!------------------> 
+                            <hr class='line' />
                         </div>
                         <div id="pageSub">
                             <ul>

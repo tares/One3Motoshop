@@ -240,6 +240,14 @@ root {
     margin: 5px 15px;
     text-shadow: 1px 1px #111111;
 }
+#font-headserSub a{
+    text-decoration: none;
+    color: #F6F6F6;
+}
+#font-headerSub a:hover{
+    color:#FF3;
+    font-size: 150px;
+}
 #mainSub{
     margin: 70px auto auto 120px;
     cursor:pointer;
@@ -268,6 +276,8 @@ root {
    -moz-opacity:1.0;
    -khtml-opacity:1; 
 }
+
+
 
 #productInfo{
     margin: 0px 20px auto;
@@ -637,6 +647,7 @@ root {
     overflow: hidden;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.04) inset;
+    cursor: pointer;
 }
 #pickupBrand:hover{
     opacity:1.0;

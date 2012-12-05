@@ -101,9 +101,10 @@
                              </div>
                              <div id="pickupBrand" class="blur">
                                  <div id="imgBrand" class="img1">
+                                     <img src="../source/images/product/brand/Ducati_Monster_1100.png"/>
                                  </div>
                                  <div id="logo" class="logo1">
-                                     <img src="../source/images/product/brand/ducati120x120.png" width="120px" height="120px"/> 
+                                     <img src="../source/images/product/brand/ducati-none.png" width="120px" height="120px"/> 
                                  </div>
                              </div>
                              <div id="pickupBrand" class="blur">   
