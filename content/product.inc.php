@@ -20,7 +20,7 @@
                     </div>
                     <div id="paddingWrapper">
                     	<div id="product-box-row">
-                            <div id="eventWrapper">
+                            <div id="brandWrapper">
                                 <center>
                                     <a href="#Ducati"><img id="brand_picThumb" class="blur" src="source/images/product/brand/ducati120x120.png" width="120" height="120" alt="Brand Logo" /></a>
                                     <a href="#Honda"><img id="brand_picThumb" class="blur" src="source/images/product/brand/honda120x120.png" width="120" height="120" alt="Brand Logo" /></a>
