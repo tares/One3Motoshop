@@ -16,9 +16,41 @@
 				
 				$('.show_hide').click(function(){
 					$(".slidingDiv").slideToggle("slow");
+					initialize();
 				});
 			});
 		</script>
+        
+        <!--Map-->
+		<script type="text/javascript">
+			function initialize() {
+				var myLatlng = new google.maps.LatLng(-6.23256, 106.63090);
+				var mapOptions = {
+					zoom: 14,
+					mapDiv:Node,
+					center: myLatlng,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+			
+				var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+				
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title:"Our One3MotoShop"
+				});
+			}
+			
+			function loadScript() {
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDxxfJSHJq9C3Uuu7u0XjoxsudcJNTmQj0&sensor=false&callback=initialize";
+				document.body.appendChild(script);
+			}
+			
+			window.onload = loadScript;
+        </script>
+        <!--End Map-->
         
         <?php include("include/loader/aviaslider.inc.php"); ?>
         

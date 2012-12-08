@@ -1,4 +1,4 @@
-       <div class="slidingDiv">
+       <div class="slidingDiv" onload="initialize()">
         	<div id="slidingHeader" class="dropShadow_lighter"></div>
             <div id="slidingContent">
             	<div id="contactUS_mainFrame">
@@ -50,6 +50,8 @@
                             </div>
                         </div>
                     </div>
+                    <div id="map_canvas"></div>
+                    
             	</div>
             </div>
         </div>
