@@ -527,6 +527,7 @@ root {
     height:200px;
     width:600px; 
     margin-right:10px;
+    background-color: red;
 }
 #itemName{
     height: 50px;
