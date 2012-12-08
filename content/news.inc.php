@@ -1,5 +1,5 @@
         <div id="mainSection">
-        	<div id="topBanner"></div>
+        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-3.png); background-repeat:no-repeat;"></div>
         	<div id="searchBOX"></div>
         	<div id="productWrapper">
             	<div id="section-left" class="dropShadow_lighter"></div>

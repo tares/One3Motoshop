@@ -21,6 +21,7 @@
                 	<div id="menuPicture" class="dropShadow_lighter" style="background-image:url(source/images/home/HomeProduct.jpg);"></div>
                     <div id="menuSub">
                     	<h3>Recommended Products</h3>
+                        <span>&rarr; R&G Racing Tail Tidies, CBR1000 2012</span>
                     </div>
               	</div>
                 <div id="mainMenuBox" class="menuBox2">
@@ -39,6 +40,28 @@
                 	<div id="menuHeader" class="dropShadow_lighter">
                     	<div id="toolbar-headerMenu">
                             Latest News
+                        </div>
+                    </div>
+                    <div id="home-NewsWrapper">
+                    	<div id="home-NewsItem">
+                        	<h3>MV AGUSTA PRESENTS THE ACCESSORIES</h3>
+                            <p>"A new segment. A new reference. A new MV Agusta. The Rivale 800. (Read more..)"</p>
+                        </div>
+                        <div id="home-NewsItem">
+                        	<h3>MV AGUSTA PRESENTS</h3>
+                            <p>"A new segment. A new reference. A new MV Agusta. The Rivale 800. (Read more..)"</p>
+                        </div>
+                        <div id="home-NewsItem">
+                        	<h3>ACCESSORIES LINE-UP</h3>
+                            <p>"A new segment. A new reference. A new MV Agusta. The Rivale 800. (Read more..)"</p>
+                        </div>
+                        <div id="home-NewsItem">
+                        	<h3>ACCESSORIES LINE-UP</h3>
+                            <p>"A new segment. A new reference. A new MV Agusta. The Rivale 800. (Read more..)"</p>
+                        </div>
+                        <div id="home-NewsItem">
+                        	<h3>ACCESSORIES LINE-UP</h3>
+                            <p>"A new segment. A new reference. A new MV Agusta. The Rivale 800. (Read more..)"</p>
                         </div>
                     </div>
                 </div>

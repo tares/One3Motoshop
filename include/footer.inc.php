@@ -50,12 +50,13 @@
                             </div>
                         </div>
                     </div>
-                    <div id="map_canvas"></div>
-                    
+                    <div id="map_canvas" class="dropShadow_lighter">
+                    	<div id="map_area" style="height:280px; width:auto; margin:10px; border:ridge #666 3px;"></div>
+                    </div>
             	</div>
             </div>
         </div>
-		<div id="footer" align="center">
+		<div id="footer" align="center" class="dropShadow">
 			<span class="credit">
             	<p>Terms of Use | Privacy Policy</p>
                 <p>Copyright &copy; 2012 Flapjaxx Inc. All rights reserved</p>
