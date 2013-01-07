@@ -95,20 +95,21 @@
 
 /*Contact US*/
 	#contactUS_mainFrame{
+		padding:20px 10px 0px 10px;
 	}
 	
 	#contactUS_mainFrame_left{
 		position:relative;
 		margin:auto;
-		height:270px;
 		width:920px;
+		height:270px;
 	}
 	
 	#contactUS_box{
 		position:absolute;
-		width:290px;
+		width:293px;
 		height:260px;
-		background-color:#222;
+		background-color:#000;
 		
 		/*Drop shadow*/
 		-moz-box-shadow: 0px 0px 5px #333;
@@ -118,8 +119,8 @@
 	}
 	
 	.contactUS_box1{ left:0px;}
-	.contactUS_box2{ left:315px;}
-	.contactUS_box3{ left:630px}
+	.contactUS_box2{ left:303px;}
+	.contactUS_box3{ left:606px;}
 	
 	#contactUS_header{
 		width:100%;
@@ -572,6 +573,16 @@
 		text-align:center;
 		color:#999;
 	}
-	
-	
 /* END Gallery Style */
+
+
+/* ABout US Style */
+	#aboutusWrapper{
+		background-color:#222;
+	}
+	
+	#aboutusSpacing{
+		height:20px;
+	}
+	
+/* END ABout US Style */

@@ -20,6 +20,8 @@
                          <!-------------------->
                     </div>
                     <div id="paddingWrapper">
+                    	<h1>Our News And Events</h1> 
+                   		<p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</p>
                     	<div id="product-box-row">
                             <div id="newsBox">
                             	<div id="news-picBox" class="dropShadow_lighter" style="background-image:url(source/images/news/thumb/thumb-main.jpg);"></div>

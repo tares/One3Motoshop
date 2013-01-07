@@ -9,18 +9,6 @@
         
         <?php include("include/loader/jquery.inc.php"); ?>
         
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$(".slidingDiv").hide();
-				$(".show_hide").show();
-				
-				$('.show_hide').click(function(){
-					$(".slidingDiv").slideToggle("slow");
-					initialize();
-				});
-			});
-		</script>
-        
         <!--Map-->
 		<script type="text/javascript">
 			function initialize() {
