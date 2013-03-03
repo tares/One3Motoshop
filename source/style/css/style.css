@@ -412,6 +412,14 @@
 		margin-bottom:10px;
 	}
 	
+	.news_date{
+		color:#FFF;
+		font: 400 12px 'century gothic', 'Gill Sans', 'trebuchet ms', Tahoma, Geneva, sans-serif;
+		font-weight:bold;
+		padding:0px;
+		margin:0px;
+	}
+	
 	#paddingWrapper p{
 		color:#999;
 		line-height:120%;
@@ -511,6 +519,16 @@
 		color:#FF3;
 	}
 	
+	#newsBox a{
+		color:#FF3;
+		text-decoration:none;
+	}
+	
+	#newsBox a:hover{
+		color:#B90504;
+		text-decoration:none;
+	}
+	
 	#newsBox p{
 		padding-left:10px;
 		font: 400 12px 'century gothic', 'Gill Sans', 'trebuchet ms', Tahoma, Geneva, sans-serif;
@@ -573,6 +591,27 @@
 		text-align:center;
 		color:#999;
 	}
+	
+	#paddingWrapper_gallery{
+		padding:40px;
+		background-color:#EEE;
+		box-shadow: inset 0px 5px 10px rgba(0,0,0,0.9);
+	}
+	
+	#gallery_picThumb{
+		margin:0px 1px;
+		padding:5px;
+		width:180px;
+		height:180px;
+		background-color:#FFF;
+		cursor:pointer;
+		
+		/*Drop shadow*/
+		-moz-box-shadow: 0px 0px 10px #000;
+		-webkit-box-shadow: 0px 0px 10px #000;
+		box-shadow: 0px 0px 10px #000;
+		/*End drop shadow*/
+	}
 /* END Gallery Style */
 
 
@@ -586,3 +625,21 @@
 	}
 	
 /* END ABout US Style */
+
+
+/* Motor Types Style */
+	#motorSeries_banner{
+		width:500px;
+		height:100px;
+		background-color:#0C3;
+		margin-bottom:10px;
+		background-color:#333;
+		cursor:pointer;
+		
+		/*Drop shadow*/
+		-moz-box-shadow: 0px 0px 10px #000;
+		-webkit-box-shadow: 0px 0px 10px #000;
+		box-shadow: 0px 0px 10px #000;
+		/*End drop shadow*/
+	}
+/* Motor Types Style */

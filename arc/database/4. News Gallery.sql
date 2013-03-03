@@ -1,0 +1,13 @@
+CREATE TABLE data_news(
+	ID_news INT(11) NOT NULL auto_increment,
+	addedDate DATETIME NOT NULL DEFAULT '2009-01-01 00:00:00',
+	additionalInfo TEXT NOT NULL,
+	newsTitle VARCHAR(500) NOT NULL DEFAULT 'NO TITLE',
+	shortDesc TEXT NOT NULL,
+	category VARCHAR(20) NOT NULL,
+	picThumb TEXT NOT NULL,
+	content TEXT DEFAULT NULL,
+	flag BOOLEAN NOT NULL DEFAULT 1,
+	
+	PRIMARY KEY(contentID)
+	)ENGINE=InnoDB;

@@ -23,11 +23,11 @@
                     	<h1>Our News And Events</h1> 
                    		<p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</p>
                     	<div id="product-box-row">
-                            <div id="newsBox">
+                        	<div id="newsBox">
                             	<div id="news-picBox" class="dropShadow_lighter" style="background-image:url(source/images/news/thumb/thumb-main.jpg);"></div>
-								<h1>MV AGUSTA PRESENTS THE ACCESSORIES LINE-UP DEDICATED TO THE NEW 3 CYLINDERS</h1>
+								<h1><a href="index.php?location=showNews">MV AGUSTA PRESENTS THE ACCESSORIES LINE-UP DEDICATED TO THE NEW 3 CYLINDERS</a></h1>
                                 <p>
-                                	"A new segment. A new reference. A new MV Agusta. The Rivale 800. Absolute enjoyment. MV Agusta Rivale 800. Unique both in design, performance, and absolute riding satisfaction. Unquestionably MV Agusta, Rivale 800.."
+                                	"A new segment. A new reference. A new MV Agusta. The Rivale 800. Absolute enjoyment. MV Agusta Rivale 800. Unique both in design, performance, and absolute riding satisfaction. Unquestionably MV Agusta, Rivale 800.." <a href="index.php?location=showNews">(read more...)</a>
                                 </p>
                             </div>
                             
@@ -38,7 +38,10 @@
                                 <p>
                                 	"A new segment. A new reference. A new MV Agusta. The Rivale 800. Absolute enjoyment. MV Agusta Rivale 800. Unique both in design, performance, and absolute riding satisfaction. Unquestionably MV Agusta, Rivale 800.."
                                 </p>
-                            </div><div id="newsBox">
+                            </div>
+                            
+                            
+                            <div id="newsBox">
                             	<div id="news-picBox" class="dropShadow_lighter" style="background-image:url(source/images/news/thumb/thumb-main.jpg);"></div>
 								<h1>MV AGUSTA PRESENTS THE ACCESSORIES LINE-UP DEDICATED TO THE NEW 3 CYLINDERS</h1>
                                 <p>
