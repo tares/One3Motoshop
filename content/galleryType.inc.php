@@ -59,7 +59,7 @@
                                     	<div id="GalleryBox" class="GalleryBoxleft">
                                         	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/hondaCover.png);"></div>
                                             <div id="galleryCaptions">
-                                            	<h3 onclick="location.href='index.php?location=galleryType'">Honda Project</h3>
+                                            	<h3 onclick="location.href='index.php?location=galleryDisplay'">Honda Project</h3>
                                                 <p>15 Photos</p>
                                             </div>
                                         </div>
