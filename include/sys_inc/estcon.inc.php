@@ -3,5 +3,5 @@
 	 if (!$con){
 		 die ("Cannot connect to " . mysql_error());
 	 }
-	 mysql_select_db("bursaKost", $con);
+	 mysql_select_db("one3Motoshop", $con);
 ?>

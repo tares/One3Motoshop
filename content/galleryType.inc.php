@@ -55,47 +55,103 @@
                    		<p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</p>
                     	<div id="product-box-row">
                             <div id="brandWrapper">
-                                    <div id="GalleryBoxGroup">
-                                    	<div id="GalleryBox" class="GalleryBoxleft">
-                                        	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/hondaCover.png);"></div>
-                                            <div id="galleryCaptions">
-                                            	<h3 onclick="location.href='index.php?location=galleryDisplay'">Honda Project</h3>
-                                                <p>15 Photos</p>
-                                            </div>
-                                        </div>
-                                        <div id="GalleryBox" class="GalleryBoxright">
-                                        	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/yamahaCover.png);"></div>
-                                            <div id="galleryCaptions">
-                                            	<h3>Yamaha Project</h3>
-                                                <p>41 Photos</p>
-                                            </div>
+                            <?php 
+								include_once("include/sys_inc/estcon.inc.php");
+							?>
+                            	<?php
+                             	//query Gallery brand
+								$brand = $_REQUEST['brand'];
+								$query = "	SELECT * 
+											FROM data_gallery_motoType
+											WHERE ID_galleryGroup = '".$brand."' AND flag = '1'
+											ORDER BY name_motoTypeGroup;";
+								
+								$result = mysql_query($query);
+								$i=1;
+								$flagLine = 1;
+								while($row = mysql_fetch_array($result))
+									{
+										if ($flagLine == 1){
+											echo ' <div id="GalleryBoxGroup"> ';
+										}
+										if ($i%2){
+											echo ' 	<div id="GalleryBox" class="GalleryBoxleft"> ';
+											echo ' 		<div id="galleryPicture" style="background-image:url(source/images/gallery/cover_type/'.$row['pic_coverPhoto'].'.jpg);"></div> ';
+											echo ' 		<div id="galleryCaptions"> ';
+											echo ' 			<h3 onclick="location.href=\'index.php?location=galleryDisplay&type='.$row['ID_motoTypeGroup'].'\'">'.$row['name_motoTypeGroup'].' Project</h3> ';
+											echo ' 			<p>15 Photos</p> ';
+											echo ' 		</div> ';
+											echo ' 	</div> ';
+											$flagLine= 2;
+										}else{
+											echo ' 	<div id="GalleryBox" class="GalleryBoxright"> ';
+											echo ' 		<div id="galleryPicture" style="background-image:url(source/images/gallery/cover_type/'.$row['pic_coverPhoto'].'.jpg);"></div> ';
+											echo ' 		<div id="galleryCaptions"> ';
+											echo ' 			<h3 onclick="location.href=\'index.php?location=galleryDisplay&type='.$row['ID_motoTypeGroup'].'\'">'.$row['name_motoTypeGroup'].' Project</h3> ';
+											echo ' 			<p>29 Photos</p> ';
+											echo ' 		</div> ';
+											echo ' 	</div> ';
+											$flagLine= 3;
+										}
+										
+										if ($flagLine == 3){
+											echo ' </div> ';
+											$flagLine= 1;
+										}
+										
+	
+										$i++;
+									}
+									
+									if ($flagLine == 2){
+										echo ' </div> ';
+										$flagLine= 1;
+									}
+								?>
+                            	<?php 
+									include_once("include/sys_inc/endcon.inc.php");
+								?>
+                                <!--<div id="GalleryBoxGroup">
+                                    <div id="GalleryBox" class="GalleryBoxleft">
+                                        <div id="galleryPicture" style="background-image:url(source/images/gallery/cover/hondaCover.png);"></div>
+                                        <div id="galleryCaptions">
+                                            <h3 onclick="location.href='index.php?location=galleryDisplay'">Honda Project</h3>
+                                            <p>15 Photos</p>
                                         </div>
                                     </div>
-                                    <div id="GalleryBoxGroup">
-                                    	<div id="GalleryBox" class="GalleryBoxleft">
-                                        	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/ducatiCover.png);"></div>
-                                            <div id="galleryCaptions">
-                                            	<h3>Ducati Project</h3>
-                                                <p>15 Photos</p>
-                                            </div>
-                                        </div>
-                                        <div id="GalleryBox" class="GalleryBoxright">
-                                        	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/kawasakiCover.png);"></div>
-                                            <div id="galleryCaptions">
-                                            	<h3>Kawasaki Project</h3>
-                                                <p>29 Photos</p>
-                                            </div>
+                                    <div id="GalleryBox" class="GalleryBoxright">
+                                        <div id="galleryPicture" style="background-image:url(source/images/gallery/cover/yamahaCover.png);"></div>
+                                        <div id="galleryCaptions">
+                                            <h3>Yamaha Project</h3>
+                                            <p>41 Photos</p>
                                         </div>
                                     </div>
-                                    <div id="GalleryBoxGroup">
-                                    	<div id="GalleryBox" class="GalleryBoxleft">
-                                        	<div id="galleryPicture" style="background-image:url(source/images/gallery/cover/apriliaCover.png);"></div>
-                                            <div id="galleryCaptions">
-                                            	<h3>Aprilia Project</h3>
-                                                <p>36 Photos</p>
-                                            </div>
+                                </div>
+                                <div id="GalleryBoxGroup">
+                                    <div id="GalleryBox" class="GalleryBoxleft">
+                                        <div id="galleryPicture" style="background-image:url(source/images/gallery/cover/ducatiCover.png);"></div>
+                                        <div id="galleryCaptions">
+                                            <h3>Ducati Project</h3>
+                                            <p>15 Photos</p>
                                         </div>
                                     </div>
+                                    <div id="GalleryBox" class="GalleryBoxright">
+                                        <div id="galleryPicture" style="background-image:url(source/images/gallery/cover/kawasakiCover.png);"></div>
+                                        <div id="galleryCaptions">
+                                            <h3>Kawasaki Project</h3>
+                                            <p>29 Photos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="GalleryBoxGroup">
+                                    <div id="GalleryBox" class="GalleryBoxleft">
+                                        <div id="galleryPicture" style="background-image:url(source/images/gallery/cover/apriliaCover.png);"></div>
+                                        <div id="galleryCaptions">
+                                            <h3>Aprilia Project</h3>
+                                            <p>36 Photos</p>
+                                        </div>
+                                    </div>
+                                </div>-->
                             </div>
                         </div>
                         

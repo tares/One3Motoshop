@@ -4,7 +4,7 @@ CREATE TABLE data_motor_brand(
 	pic_motoBrand VARCHAR(30) NOT NULL DEFAULT 'no_picture',
 	activeStatus BOOLEAN NOT NULL DEFAULT 1,
 	
-	PRIMARY KEY(ID_motoBrand),
+	PRIMARY KEY(ID_motoBrand)
 	)ENGINE=InnoDB;
 	
 CREATE TABLE data_motor_type(
@@ -21,6 +21,7 @@ CREATE TABLE data_motor_type(
 	)ENGINE=InnoDB;
 	
 INSERT INTO data_motor_brand VALUES
+	('','Aprilia Project','aprilia','1'),
 	('','Ducati','logo_ducati','1'), 
 	('','Honda','logo_honda','1'),
 	('','Kawasaki','logo_kawasaki','1'),

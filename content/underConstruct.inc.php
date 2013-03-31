@@ -20,7 +20,14 @@
                          <!-------------------->
                     </div>
                     <div id="paddingWrapper">
-                        <h1>Our News And Events</h1> 
+                    	<h1>Ooops.. We are so sorry</h1> 
+                   		<p>Unfortunately, this page is under construction and not available yet. We are sorry for the inconvenience and appreciate your patience. This page will availabe as soon as possible. Maybe you can visit our other pages. See you soon..</p>
+                        <p>If you can't find what you are looking for here, feel free to email us with your query and we will get back to you within 5 working days.</p>
+                    	<center>
+                        	<img class="dropShadow_lighter" src="source/images/other/Under_construction.jpg" width="500" height="300" longdesc="http://www.one3motorshop" />
+                        </center>
+						
+                        <!--<h1>Our News And Events</h1> 
                    		<p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</p>
                     	<div id="product-box-row">
                         	<div id="newsBox">
@@ -78,7 +85,7 @@
                         </div>
                         
                         <div id="bottBanner" style="background-image:url(source/images/banner/news.png);" class="dropShadow_lighter"></div>
-                        
+                        -->
                     </div>
                 </div>
             </div>

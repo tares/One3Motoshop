@@ -1,4 +1,4 @@
-DROP DATABASE one3Moto;
-CREATE DATABASE one3Moto;
+DROP DATABASE one3Motoshop;
+CREATE DATABASE one3Motoshop;
 
-USE DATABASE one3Moto;
+USE one3Motoshop;
