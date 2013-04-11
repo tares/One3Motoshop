@@ -205,11 +205,20 @@ body {
 
 #one3bann{
 	position:fixed;
-	background-color:#CCC;
-	background-image:url(../../images/home/main_logo.png);
+	background-color:#B90504;
+	background-image:url(../../images/other/one3motoshop_logo.png);
 	top:0px;
 	left:0px;
-	width:200px;
-	height:113px;;
+	width:243px;
+	height:150px;
 	z-index:100000;
+	background-repeat:no-repeat;
+}
+
+#one3ban{
+	width:920px;
+	height:140px;
+	background-image:url(../../images/other/one3motoshop_logo.png);
+	margin: 42px auto 0px auto;
+	background-repeat:no-repeat;
 }

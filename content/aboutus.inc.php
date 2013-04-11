@@ -1,5 +1,7 @@
         <div id="mainSection">
-        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-3.png); background-repeat:no-repeat;"></div>
+        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-5.png); background-repeat:no-repeat;">
+            	<div id="topBanner_logo"></div>
+            </div>
         	<div id="searchBOX"></div>
             <div id="sectionTOP" class="dropShadow_lighter">
                 <div id="font-headserSub">

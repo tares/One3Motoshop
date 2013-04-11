@@ -20,7 +20,7 @@ CREATE TABLE data_gallery_motoType(
 		ON DELETE CASCADE
 	)ENGINE=InnoDB;
 	
-CREATE TABLE data_picTable(
+CREATE TABLE data_gallery_picTable(
 	ID_photo INT(11) NOT NULL auto_increment,
 	ID_motoTypeGroup INT(11) NOT NULL,
 	addedDate DATETIME NOT NULL DEFAULT '2009-01-01 00:00:00',
@@ -71,3 +71,34 @@ INSERT INTO data_gallery_motoType VALUES
 	('','5','DUKE 200','ktm-duke-200','1'),
 	('','6','GSXR 600','suzuki-gsxr-600','1'),
 	('','7','YZF-R6','yamaha-yzf-r6','1');
+	
+INSERT INTO data_gallery_picTable VALUES
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_1','Aprilia_RS125_1','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_2','Aprilia_RS125_2','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_3','Aprilia_RS125_3','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_4','Aprilia_RS125_4','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_5','Aprilia_RS125_5','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_6','Aprilia_RS125_6','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_7','Aprilia_RS125_7','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_8','Aprilia_RS125_8','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_9','Aprilia_RS125_9','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_10','Aprilia_RS125_10','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_11','Aprilia_RS125_11','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_12','Aprilia_RS125_12','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_13','Aprilia_RS125_13','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_14','Aprilia_RS125_14','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_15','Aprilia_RS125_15','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_16','Aprilia_RS125_16','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_17','Aprilia_RS125_17','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_18','Aprilia_RS125_18','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_19','Aprilia_RS125_19','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_20','Aprilia_RS125_20','1'),
+	('','1','2012-03-14','Aprilia RS 125 Project','Aprilia_RS125_21','Aprilia_RS125_21','1'),
+	
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),
+	('','','2012-03-14','','','',''),

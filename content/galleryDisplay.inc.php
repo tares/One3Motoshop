@@ -38,7 +38,9 @@
     </script>		
         
         <div id="mainSection">
-        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-1.png); background-repeat:no-repeat;"></div>
+        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-1.png); background-repeat:no-repeat;">
+            	<div id="topBanner_logo"></div>
+            </div>
         	<div id="searchBOX">
             	<table width="860px" style="margin:0px 20px;">
                 	<tr>
@@ -89,28 +91,77 @@
                         </div>
                          <!-------------------->
                     </div>
+                    
+                    <?php 
+						include_once("include/sys_inc/estcon.inc.php");
+						error_reporting(-1);
+					?>
+                            	
                     <div id="paddingWrapper" style="padding-bottom:10px;">
-                    	<h1>Honda Project</h1> 
+                    	<?php
+							$type = $_REQUEST['type'];
+							$query1 = "	SELECT 	DISTINCT name_galleryGroup, name_motoTypeGroup
+												
+										FROM 	data_gallery_picTable a, 
+												data_gallery_group b, 
+												data_gallery_motoType c
+												
+										WHERE 	a.ID_motoTypeGroup = c.ID_motoTypeGroup 
+												AND b.ID_galleryGroup = c.ID_galleryGroup 
+												AND c.ID_motoTypeGroup = '".$type."' 
+												AND c.flag = '1'
+												
+										ORDER BY addedDate, urlPic";
+							
+							$result1 = mysql_query($query1);
+							$row1 = mysql_fetch_array($result1);
+						?>
+                    	<h1><?php echo ''.$row1['name_galleryGroup'].' - [ '.$row1['name_motoTypeGroup'].' ]'; ?></h1> 
                    		<p>Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</p>
                     </div>
                     <div id="paddingWrapper_gallery">
                         <div id="product-box-row" style="margin-bottom:0px;">
                             <div id="brandWrapper">
                                 <center>
-                                	<a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_1.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_1.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_2.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_2.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_3.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_3.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_4.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_4.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_5.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_5.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_6.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_6.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_7.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_7.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_8.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_8.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_9.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_9.png" width="180" height="180" alt="Picture Thumbnail" /></a>
-                                    <a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/honda_cbr250r_10.jpg"><img id="gallery_picThumb" src="source/images/gallery/thumbnail/honda_cbr250r_10.png" width="180" height="180" alt="Picture Thumbnail" /></a>
+                                
+                                	<?php
+										//query Gallery brand
+										$query = "	SELECT 	c.ID_motoTypeGroup, 
+															addedDate, captions, 
+															urlThumb, urlPic, 
+															c.flag, 
+															name_galleryGroup, 
+															name_motoTypeGroup
+															
+													FROM 	data_gallery_picTable a, 
+															data_gallery_group b, 
+															data_gallery_motoType c
+															
+													WHERE 	a.ID_motoTypeGroup = c.ID_motoTypeGroup 
+															AND b.ID_galleryGroup = c.ID_galleryGroup 
+															AND c.ID_motoTypeGroup = '".$type."' 
+															AND c.flag = '1'
+															
+													ORDER BY addedDate, urlPic";
+										
+										$result = mysql_query($query);
+										while($row = mysql_fetch_array($result))
+											{
+												echo '	<a class="fancybox-buttons" data-fancybox-group="button" href="source/images/gallery/picture/'.$row['urlPic'].'.jpg">';
+												echo '		<img id="gallery_picThumb" src="source/images/gallery/thumbnail/'.$row['urlThumb'].'.jpg" width="180" height="180" alt="'.$row['captions'].'" />';
+												echo '	</a>';
+											}
+											
+										?>
                                 </center>
                             </div>
                         </div>
                      </div>
+                     
+                    <?php 
+						include_once("include/sys_inc/endcon.inc.php");
+					?>
+                                
                      <div id="paddingWrapper">
                         <div id="bottBanner" style="background-image:url(source/images/banner/news.png);" class="dropShadow_lighter"></div>
                     </div>

@@ -9,5 +9,5 @@ CREATE TABLE data_news(
 	content TEXT DEFAULT NULL,
 	flag BOOLEAN NOT NULL DEFAULT 1,
 	
-	PRIMARY KEY(contentID)
+	PRIMARY KEY(ID_news)
 	)ENGINE=InnoDB;

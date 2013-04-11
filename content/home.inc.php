@@ -1,4 +1,7 @@
         <div id="mainSection">
+        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-1.png); background-repeat:no-repeat;">
+            	<div id="topBanner_logo"></div>
+            </div>
         	<div id="mainHeader" class="dropShadow">
             	<div id="mainSlider">
                     <ul class='aviaslider' id="frontpage-slider">

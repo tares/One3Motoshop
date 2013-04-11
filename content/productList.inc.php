@@ -1,5 +1,7 @@
 		<div id="mainSection">
-        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-2.png); background-repeat:no-repeat;"></div>
+        	<div id="topBanner" style="background-image:url(source/images/banner/topBanner-2.png); background-repeat:no-repeat;">
+            	<div id="topBanner_logo"></div>
+            </div>
         	<div id="searchBOX">
             	<table width="860px" style="margin:0px 20px;">
                 	<tr>

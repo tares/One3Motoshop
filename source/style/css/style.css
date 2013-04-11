@@ -39,8 +39,14 @@
 	#topBanner{
 		width:100%;
 		height:200px;
-		background-color:#CCC;
+		background-color:#000;
 		margin-top:10px;
+	}
+	
+	#topBanner_logo{
+		width:100%;
+		height:200px;
+		background-image:url(../../images/banner/banner_logo.png);
 	}
 	
 	#mainSection{
